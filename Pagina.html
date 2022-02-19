@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="imagem/png" href="images/icone.png" />
+    <title>JPBot - seu psicologo virtual</title>
+    <style>
+      body {
+        background-image: url(midia/fundo1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #iframe {
+        position: fixed;
+        top: 100px;
+        left: 700px;
+        width: 100%;
+        border: none;
+      }
+      @media (max-width: 720px) {
+        body {
+          background-image: url(midia/fundo2.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #iframe {
+          left: 150px;
+          top: 80px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav></nav>
+    <div id="iframe">
+      <iframe
+        width="350"
+        height="430"
+        allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/e28f7b4e-6e43-48a5-a98a-cacdddb72713"
+      ></iframe>
+    </div>
+  </body>
+</html>
