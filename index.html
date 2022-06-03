@@ -26,6 +26,16 @@
         border-left: none;
         border-right: none;
         width: 350px;
+        cursor: pointer;
+      }
+      #button_support {
+        cursor: pointer;
+        position: fixed;
+        top: 100px;
+        left: 1100px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;  
       }
       @media (max-width: 1000px) {
         body {
@@ -40,6 +50,10 @@
         #buttons {
           top: 1000px;
           left: 600px;
+        }
+        #button_support {
+          left: 700px;
+          top: 200px;
         }
       }
     </style>
@@ -65,6 +79,11 @@
       <a href="https://www.google.com.br/maps/search/caps/" target="_blank"
         ><button>Psicólogos grátis</button></a
       >
+    </div>
+    <div id="button_support">
+      <a href="mailto:joao.wanderley@aluno.uepb.edu.br? Subject: Problemas com JPBOT" target="_blank">
+        <button id="button_support">SUPORTE</button>
+      </a>
     </div>
   </body>
 </html>
